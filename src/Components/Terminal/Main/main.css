@@ -1,0 +1,49 @@
+main {
+  background-color: #616161;
+  min-height: 100%;
+  padding: 10px 20px 10px;
+}
+
+.form {
+  display: flex;
+}
+
+label {
+  color: #43a047;
+}
+
+label .tilda {
+  color: #0288d1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+label .symbol {
+  color: #fff;
+}
+
+input {
+  background-color: #616161;
+  border: 0;
+  color: #fff;
+}
+
+input:focus {
+  outline-offset: 0;
+  outline: 0;
+}
+
+.container-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-data-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-data-items span {
+  color: #e0e0e0;
+  margin-top: 3px;
+}

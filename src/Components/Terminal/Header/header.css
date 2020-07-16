@@ -1,0 +1,96 @@
+header {
+  background-color: #212121;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+ul li {
+  color: #bdbdbd;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.parent-sub-menu {
+  position: relative;
+}
+
+.parent-sub-menu:hover .sub-menu-container {
+  display: block;
+  transition: 1s;
+}
+
+.sub-menu-container {
+  display: none;
+  transition: 1s;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 15;
+  left: 0;
+  z-index: 200;
+
+  padding: 0;
+  background-color: rgba(189, 189, 189, 0.9);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-menu li {
+  cursor: auto;
+  color: #000;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 8px;
+}
+
+.sub-menu li:hover {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.sub-menu li:last-child {
+  border-bottom: none;
+}
+
+.sub-menu .colors {
+  display: flex;
+  flex-direction: row;
+  margin: 3px 0;
+  justify-content: flex-start;
+}
+
+.sub-menu .colors {
+  display: flex;
+  flex-direction: row;
+  margin: 3px 0;
+  justify-content: flex-start;
+}
+
+.sub-menu .colors div {
+  cursor: pointer;
+  margin-top: 5px;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+}
+
+.sub-menu .font-sizes div {
+  cursor: pointer;
+  margin-top: 5px;
+  width: auto;
+  margin-left: 8px;
+}
+
+.sub-menu .colors div:first-child {
+  margin-left: 0;
+}
